@@ -8,4 +8,9 @@ export default defineConfig({
     react(),
     crx({ manifest }),
   ],
+  resolve: {
+    alias: {
+      '@mui/styled-engine': '@mui/styled-engine-sc',
+    },
+  }
 })
